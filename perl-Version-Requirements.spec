@@ -1,15 +1,13 @@
 %define upstream_name    Version-Requirements
-%define upstream_version 0.101023
-
 Name:		perl-%{upstream_name}
-Version:	%{upstream_version}
-Release:	1
+Version:	0.101023
+Release:	2
 
 Summary:	A set of version requirements for a CPAN dist
 License:	GPL+ or Artistic
 Group:		Development/Perl
 Url:		https://github.com/rjbs/Version-Requirements
-Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Version-Requirements-%{upstream_version}.tar.gz
+Source0:	https://cpan.metacpan.org/authors/id/R/RJ/RJBS/Version-Requirements-%{version}.tar.gz
 
 BuildRequires:	make
 BuildRequires:	perl-devel
@@ -30,7 +28,7 @@ Logically impossible constraints will be identified immediately by thrown
 exceptions.
 
 %prep
-%setup -q -n %{upstream_name}-%{upstream_version}
+%setup -q -n %{upstream_name}-%{version}
 
 %build
 perl Makefile.PL INSTALLDIRS=vendor
