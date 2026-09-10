@@ -1,7 +1,7 @@
 %define upstream_name    Version-Requirements
 Name:		perl-%{upstream_name}
 Version:	0.101023
-Release:	2
+Release:	1
 
 Summary:	A set of version requirements for a CPAN dist
 License:	GPL+ or Artistic
